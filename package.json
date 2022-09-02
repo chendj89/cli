@@ -1,17 +1,21 @@
 {
-  "name": "cli",
+  "name": "@chencc/cli",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "./bin/index.js",
   "scripts": {},
   "bin": {
     "cc": "./bin/index.js"
   },
-  "keywords": [],
+  "keywords": ["cli","server"],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "commander": "^9.4.0",
     "mime": "^3.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chendj89/cli.git"
   }
 }
