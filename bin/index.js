@@ -20,7 +20,6 @@ program
   .option("-p,--port [port]", "端口号", 8080)
   .option("-b,--base [base]", "默认地址,可以选填主要解决github pages", "")
   .parse(process.argv);
-console.log(program._optionValues);
 let getFileMime = function (extname) {
   return mime.getType(extname);
 };
