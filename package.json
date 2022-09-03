@@ -1,13 +1,16 @@
 {
   "name": "@chenflash/cli",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "",
   "main": "./bin/index.js",
   "scripts": {},
   "bin": {
     "cc": "./bin/index.js"
   },
-  "keywords": ["cli","server"],
+  "keywords": [
+    "cli",
+    "server"
+  ],
   "author": "",
   "license": "ISC",
   "dependencies": {

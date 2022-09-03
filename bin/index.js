@@ -29,14 +29,14 @@ let s1 = function (req, res) {
   // 判断是否为绝对路径
   if (path.isAbsolute(program._optionValues.dir)) {
     staticPath = program._optionValues.dir;
-  }else {
-    staticPath=path.join(process.cwd(), program._optionValues.dir)
+  } else {
+    staticPath = path.join(process.cwd(), program._optionValues.dir);
   }
   // 获取地址
   let pathname = url.parse(req.url).pathname;
   pathname = pathname == "/" ? "/index.html" : pathname;
-  if(program._optionValues.base){
-    let reg=new RegExp(program._optionValues.base);
+  if (program._optionValues.base) {
+    let reg = new RegExp(program._optionValues.base);
     pathname = pathname.replace(reg, "");
   }
   // 可以获取后缀名path.extname()
@@ -53,7 +53,8 @@ let s1 = function (req, res) {
         res.end(data);
       }
     } catch (error) {
-      console.log(error);
+      res.writeHead(200, { "Content-Type": `text/html;charset="utf-8"` });
+      res.end(fs.readFileSync(`${staticPath}` + "/index.html"));
     }
   } else {
     res.end();
