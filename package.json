@@ -1,6 +1,6 @@
 {
-  "name": "@chenflash/cli",
-  "version": "1.0.3",
+  "name": "@chencc/cli",
+  "version": "1.0.0",
   "description": "",
   "main": "./bin/index.js",
   "scripts": {},
