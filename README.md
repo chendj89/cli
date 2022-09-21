@@ -4,7 +4,7 @@
 
 指令
 
-`cc -h`
+`cc -h` 或者`npx cc -h` 调用本地node_modules中的指令
 
  `-d` 存放目录,绝对或相对路径都可以
 
