@@ -1,0 +1,20 @@
+{
+  "name": "tdsp-cli",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "clone": "ts-node-dev ./index.ts -r"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/fs-extra": "^9.0.13",
+    "@types/shelljs": "^0.8.11",
+    "dayjs": "^1.11.5",
+    "fs-extra": "^10.1.0",
+    "ora": "^5.4.0",
+    "shelljs": "^0.8.5"
+  }
+}
